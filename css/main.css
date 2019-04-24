@@ -7,7 +7,9 @@ body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   	display: flex;
   	justify-content: center;
-  	align-items: center;
+	  align-items: center;
+	  flex-flow:row wrap;
+	 
 }
 
 .container{
@@ -17,6 +19,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow:row wrap;
+
 }
 
 h1,
@@ -48,27 +52,26 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
-	width: 50%;
+	width:100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow:row wrap;
 }
 
 header h1 {
-	float: left;
 	margin: 0;
-	padding: 38px 0;
+	padding: 20px 0;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+	padding: 10px 0;
+	
 }
 header nav ul {
 	margin: 0;
@@ -77,9 +80,12 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+	font-size: 18px;
+	margin: 10px;
+	padding: 12px;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -91,29 +97,34 @@ header nav ul li a{
 .bottom-section {
 	margin: 0 auto;
 	clear: both;
-	width:50%;
+	width:100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
-.main-image {
+/* .main-image {
 	height: auto;
 	float: left;
-}
+} */
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
+/* 
 .main-title {
-	height: auto;
 	float: left;
-}
+} */
+
 .main-title h3 {
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
+	display:flex;
+	justify-content: center;
 }
 .main-title p {
 	padding: 0;
@@ -124,14 +135,17 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
-	float: left;
+	width: 100%;
 	border-top: 1px solid #eee;
+	display: flex;
+	
+	
 }
 
 .section-one h4 {
 	padding: 10px 0;
+	display:flex;
+	justify-content: row wrap;
 }
 
 .section-two {
@@ -156,7 +170,6 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 16px;
-	line-height: 21px;
 }
 
 .address {
@@ -166,13 +179,14 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	clear: both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	flex-flow:row wrap;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
@@ -183,20 +197,7 @@ footer span {
 
 /* tablet displays */
 
-@media (min-width: 768px) {
-	body {
-		width:100%;
-		margin: 0; 
-		width: 100%;
-	}
-
 
 
 /* desktop displays */
 
-@media (min-width: 1200px) {
-
-	width: 100%;
-	margin: 0;
-	width: 100%;
-}
