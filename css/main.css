@@ -3,12 +3,17 @@
 	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
+html {
+	font-size:16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size:1em;
   	display: flex;
   	justify-content: center;
-	  align-items: center;
-	  flex-flow:row wrap;
+	align-items: center;
+	flex-flow:row wrap;
 	 
 }
 
@@ -32,20 +37,20 @@ h4 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 h2 {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 h3 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 h4 {
-	font-size: 12px;
+	font-size: .75em;
 }
 
 p {
-	font-size: 14px;
+	font-size: .875em;
 	line-height: 21px;
     padding: 0 30px;
 }
@@ -55,6 +60,7 @@ header {
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	width:100%;
+	text-align:center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -63,6 +69,7 @@ header {
 
 header h1 {
 	margin: 0;
+	width: 100%;
 	padding: 20px 0;
 }
 header h1 span {
@@ -71,16 +78,18 @@ header h1 span {
 
 header nav {
 	padding: 10px 0;
+	width:100%;
 	
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 1.25em;
 	margin: 10px;
 	padding: 12px;
 	display: flex;
@@ -96,7 +105,6 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	margin: 0 auto;
-	clear: both;
 	width:100%;
 	display: flex;
 	justify-content: center;
@@ -121,13 +129,13 @@ header nav ul li a{
 
 .main-title h3 {
 	text-align: left;
-	padding: 5px 0;
+	padding: 5px 30px;
 	color: #77a466;
 	display:flex;
 	justify-content: center;
 }
 .main-title p {
-	padding: 0;
+	padding: 10px 30px;
 	font-size: 16px;
 	line-height: 25px;
 }
@@ -137,13 +145,12 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	border-top: 1px solid #eee;
-	display: flex;
 	
 	
 }
 
 .section-one h4 {
-	padding: 10px 0;
+	padding: 10px 30px;
 	display:flex;
 	justify-content: row wrap;
 }
@@ -160,7 +167,7 @@ header nav ul li a{
 
 .menu {
 	list-style: none;
-	padding: 0;
+	padding: 5px 30px;
 }
 .menu li {
 	padding: 10px 0;
@@ -169,11 +176,11 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size:1em;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 }
 
@@ -181,7 +188,6 @@ header nav ul li a{
 footer {
 	border-top: 3px solid #eee;
 	margin: 0 auto;
-	clear: both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -192,7 +198,7 @@ footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em;
 }
 
 /* tablet displays */
